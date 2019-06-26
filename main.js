@@ -67,7 +67,7 @@ let personString = "";
 for ( let i = 0; i < myPeople.length; i++ ) {
     personString += 
     
-    `<div>
+    `<div id="cardID-${i}">
     <header class="nameTitle">
     <h2> ${myPeople[i].title} </h2> 
     <h3> ${myPeople[i].name} </h3>
@@ -88,6 +88,17 @@ for ( let i = 0; i < myPeople.length; i++ ) {
 };
 
 peopleContainer.innerHTML = personString;
+
+peopleContainer.addEventListener("click", function(event) {
+    console.log("click test");
+    let bioClass = document.getElementsByClassName("bio");
+
+    for ( let x =0; x < bioClass.length; x++ ){
+        bioClass[x].classList.add("yellow")
+    }
+
+}
+);
 
 
 

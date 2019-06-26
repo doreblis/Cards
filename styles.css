@@ -1,0 +1,21 @@
+* {
+    background-color: aliceblue;
+}
+
+.container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nameTitle{
+    border: 1px black solid;
+
+}
+
+.bio{
+    border: 1px red dotted;
+}
+
+.footnote{
+    background-color: azure;
+}

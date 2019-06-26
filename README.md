@@ -1,0 +1,1 @@
+# class example of dynamic poulating cards with 
